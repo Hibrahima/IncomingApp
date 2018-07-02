@@ -20,7 +20,7 @@
     <name>IncomingApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.10.76.227:8100" />
+    <content original-src="index.html" src="http://10.10.76.227:8101" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

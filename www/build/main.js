@@ -122,7 +122,7 @@ var TasksService = /** @class */ (function () {
             var tasks = [];
             for (var i = 0; i < data.length; i++) {
                 var currentTask = data[i];
-                console.log("---------------------------data[i].status : " + currentTask.status);
+                console.log("---------------------------data[i].name : " + currentTask.name);
                 if (currentTask.scope == scope)
                     tasks.push(currentTask);
             }
@@ -605,7 +605,7 @@ var MyApp = /** @class */ (function () {
             statusBar.styleDefault();
             splashScreen.hide();
             //Create database
-            /*+dbProvider.createDatabase().then(() =>{
+            /*dbProvider.createDatabase().then(() =>{
                console.log("Database successfully created!");
                taskService.getAllTasks().then((data:any) => {
                  if(data.length == 0)
