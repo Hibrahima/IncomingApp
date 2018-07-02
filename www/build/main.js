@@ -122,7 +122,7 @@ var TasksService = /** @class */ (function () {
             var tasks = [];
             for (var i = 0; i < data.length; i++) {
                 var currentTask = data[i];
-                console.log("---------------------------data[i].name : " + currentTask.name);
+                console.log("---------------------------data[i].status : " + currentTask.status);
                 if (currentTask.scope == scope)
                     tasks.push(currentTask);
             }
@@ -147,10 +147,9 @@ var TasksService = /** @class */ (function () {
     };
     TasksService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__database_database__["a" /* DatabaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__database_database__["a" /* DatabaseProvider */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__database_database__["a" /* DatabaseProvider */]])
     ], TasksService);
     return TasksService;
-    var _a;
 }());
 
 //# sourceMappingURL=tasks-service.js.map
@@ -606,7 +605,7 @@ var MyApp = /** @class */ (function () {
             statusBar.styleDefault();
             splashScreen.hide();
             //Create database
-            /*dbProvider.createDatabase().then(() =>{
+            /*+dbProvider.createDatabase().then(() =>{
                console.log("Database successfully created!");
                taskService.getAllTasks().then((data:any) => {
                  if(data.length == 0)
@@ -650,15 +649,14 @@ var MyApp = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "navCtrl", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/ibrahima/Bureau/RT SS18/Mobile Computing/Incoming App/Apps/IncomingApp/src/app/app.html"*/'<ion-menu [content]="mainContent">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>\n        Menu\n      </ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content id="side-menu21">\n    <ion-list id="menu-list1">\n      <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item1">\n        <ion-icon name="home" item-left></ion-icon>\n        Home\n      </ion-item>\n      <ion-item color="none" menuClose="" on-click="goToTasks()" id="menu-list-item2">\n        <ion-icon name="list" item-left></ion-icon>\n        Tasks\n      </ion-item>\n      <ion-item color="none" menuClose="" on-click="goToLectures()" id="menu-list-item3">\n        <ion-icon name="book" item-left></ion-icon>\n        Lectures\n      </ion-item>\n      <ion-item color="none" menuClose="" on-click="goToEvents()" id="menu-list-item10">\n        <ion-icon name="people" item-left></ion-icon>\n        Events\n      </ion-item>\n      <ion-item color="none" menuClose="" on-click="goToNotifications()" id="menu-list-item11">\n        <ion-icon name="notifications" item-left></ion-icon>\n        Notifications\n      </ion-item>\n      <ion-item color="none" menuClose="" on-click="goToSettings()" id="menu-list-item12">\n        <ion-icon name="settings" item-left></ion-icon>\n        Settings\n      </ion-item>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav #mainContent [root]="rootPage"></ion-nav>'/*ion-inline-end:"/home/ibrahima/Bureau/RT SS18/Mobile Computing/Incoming App/Apps/IncomingApp/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_10__providers_database_database__["a" /* DatabaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__providers_database_database__["a" /* DatabaseProvider */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_11__providers_tasks_service_tasks_service__["a" /* TasksService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__providers_tasks_service_tasks_service__["a" /* TasksService */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_10__providers_database_database__["a" /* DatabaseProvider */], __WEBPACK_IMPORTED_MODULE_11__providers_tasks_service_tasks_service__["a" /* TasksService */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=app.component.js.map
