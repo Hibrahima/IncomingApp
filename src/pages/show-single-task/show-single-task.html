@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ShowSingleTaskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+<ion-navbar>
+  <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>
+    View Single Task
+  </ion-title>
+  <ion-buttons end>
+    <button ion-button icon-only>
+      <ion-icon name="eye"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list text-wrap>
+
+    <ion-item>
+      <ion-label stacked>Name : {{model.name}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Deadline : {{model.deadline}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Priority : {{model.priority}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Scope: {{model.scope}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Status: {{model.status}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Requiredness {{model.requiredness}}</ion-label>
+    </ion-item>
+
+    <h3> Description </h3>
+    <ion-textarea [(ngModel)]="model.description" text-wrap rows="5"></ion-textarea>
+
+
+
+
+  </ion-list>
+
+</ion-content>

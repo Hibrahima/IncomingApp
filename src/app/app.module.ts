@@ -13,6 +13,11 @@ import { SettingsPage } from '../pages/settings/settings';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//Database layer
+import { SQLite } from '@ionic-native/sqlite'
+import { DatabaseProvider } from '../providers/database/database';
+import { TasksService } from '../providers/tasks-service/tasks-service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -40,7 +45,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+      SQLite,
+    DatabaseProvider,
+    TasksService
   ]
 })
 export class AppModule {}

@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      "cordova-sqlite-storage",
+      "/home/ibrahima/Bureau/RT SS18/Mobile Computing/Incoming App/Apps/IncomingApp"
+    ]
+  ],
+  "_from": "cordova-sqlite-storage@latest",
+  "_id": "cordova-sqlite-storage@2.3.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/cordova-sqlite-storage",
+  "_nodeVersion": "10.1.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-sqlite-storage_2.3.2_1527188747949_0.3885840134002576"
+  },
+  "_npmUser": {
+    "email": "brodybits@litehelpers.net",
+    "name": "brodybits"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "cordova-sqlite-storage",
+    "raw": "cordova-sqlite-storage",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-sqlite-storage/-/cordova-sqlite-storage-2.3.2.tgz",
+  "_shasum": "b87748d93dddfa65c82594fd3c35d62417fb2e18",
+  "_shrinkwrap": null,
+  "_spec": "cordova-sqlite-storage",
+  "_where": "/home/ibrahima/Bureau/RT SS18/Mobile Computing/Incoming App/Apps/IncomingApp",
+  "author": {
+    "name": "various"
+  },
+  "bugs": {
+    "url": "https://github.com/litehelpers/Cordova-sqlite-storage/issues"
+  },
+  "cordova": {
+    "id": "cordova-sqlite-storage",
+    "platforms": [
+      "android",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "cordova-sqlite-storage-dependencies": "1.2.0"
+  },
+  "description": "Native interface to SQLite for PhoneGap/Cordova",
+  "devDependencies": {
+    "shelljs": "^0.7.4"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 66,
+    "integrity": "sha512-rgWusdiGvRvSN9jshab6a+ZXGtzbVXq28+dHwiWJc8nCZpaOTmS9L5RB0757ckWUAkcGK/5B6Suqb4/SELdSgw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbBw0OCRA9TVsSAnZWagAATtkP/isM4FvKXS16ErEGAcZ/\ngVBOhQrjG+CcI3rVlXzUY8nym88YmNP6rXwxpYaxqRzri8hDNf/R+sImfl5k\nzaEvm4x7kEmTAMzPtiaqgvJgBvggBScE4j9KcXuZKmaX8AinPFmLdpw6T0ox\nG1ygYGJ3dCCYMKZmTg199F4SW1cwPn1Cn8ZiUPXoaXm2zlbTG+vTrnbujHxk\neVOqk52Z03XvXm2SPBn0eODhAs92oYGvR+jq34OHqGX+LF0u/8Ky6kxax4U2\nOF+9RV04eFVCPBhwmnSKeSZOvZn8z0lUtSrjMZZsKrMpsApuz/6sRQE9hIo2\ndSwcCCB7rWEMTjZvLYZDIHcu0jYj3artiVA0iCIKH7avMUoOcQPBOVUqf1UB\nXLhaS+EM2t6/IsCLe6B+VZIsgv3/G/fw8iMY4SQjyJg1Al7CU0HRsHfMP5ax\nGXt41+qfrfxqFHk44EhmUuaqA8aK874ATUde4zdCe2MyqWJ0TNGiWrN9Bl++\nSUvuYGMidGexcKc/WIkEGxsgGMGJhLzx3YPTm9iEsDbqtxs5Xpk/3f/olOg3\ne0d5ABVhLuALSNF7n7daaUgpA2qqH4OFugRZ7ZWm8Zhe5FvbOjpYHBzktGML\nDZfROP/9VMvyHm3pJgAbTgK2iSjH6yTNfT7KrqEf5YrvJMF95qRSucE3/f0W\nYlpY\r\n=Oa35\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "b87748d93dddfa65c82594fd3c35d62417fb2e18",
+    "tarball": "https://registry.npmjs.org/cordova-sqlite-storage/-/cordova-sqlite-storage-2.3.2.tgz",
+    "unpackedSize": 1254983
+  },
+  "gitHead": "87a06a0705576c772a6b2e95f07ca659eca8744c",
+  "homepage": "https://github.com/litehelpers/Cordova-sqlite-storage",
+  "keywords": [
+    "cordova-android",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-windows",
+    "ecosystem:cordova",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "brodybits",
+      "email": "brodybits@litehelpers.net"
+    }
+  ],
+  "name": "cordova-sqlite-storage",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litehelpers/Cordova-sqlite-storage.git"
+  },
+  "scripts": {
+    "start": "node scripts/prepareSpec.js"
+  },
+  "version": "2.3.2"
+}
