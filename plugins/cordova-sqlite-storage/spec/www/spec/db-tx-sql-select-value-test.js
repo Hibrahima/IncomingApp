@@ -10,7 +10,7 @@ var isAndroid = !isWindows && /Android/.test(navigator.userAgent);
 var isMac = /Macintosh/.test(navigator.userAgent);
 var isWKWebView = !isWindows && !isAndroid && !isWP8 && !isMac && !!window.webkit && !!window.webkit.messageHandlers;
 
-// The following openDatabase settings are used for Plugin-implementation-2
+// The following openDatabase settings-service are used for Plugin-implementation-2
 // on Android:
 // - androidDatabaseImplementation: 2
 // - androidLockWorkaround: 1

@@ -12,7 +12,7 @@ var isAndroid = !isWindows && /Android/.test(navigator.userAgent);
 // the default Android implementation and implementation #2,
 // this test script will also apply the androidLockWorkaround: 1 option
 // in case of implementation #2.
-// The following openDatabase settings are used for Plugin-implementation-2
+// The following openDatabase settings-service are used for Plugin-implementation-2
 // on Android:
 // - androidDatabaseImplementation: 2
 // - androidLockWorkaround: 1

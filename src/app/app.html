@@ -6,33 +6,48 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
+
   <ion-content id="side-menu21">
-    <ion-list id="menu-list1">
-      <ion-item color="none" menuClose="" on-click="goToHome()" id="menu-list-item1">
-        <ion-icon name="home" item-left></ion-icon>
-        Home
+
+    <ion-list id="menu-list1" color="danger">
+
+      <ion-item color="{{homeColor}}" menuClose="" on-click="goToHome()" id="menu-list-item1">
+        <ion-icon name="home"  item-left></ion-icon>
+        <ion-label>Home</ion-label>
       </ion-item>
-      <ion-item color="none" menuClose="" on-click="goToTasks()" id="menu-list-item2">
+
+      <ion-item color="{{tasksColor}}" menuClose="" on-click="goToTasks()" id="menu-list-item2">
         <ion-icon name="list" item-left></ion-icon>
-        Tasks
+        <ion-label>Tasks</ion-label>
       </ion-item>
-      <ion-item color="none" menuClose="" on-click="goToLectures()" id="menu-list-item3">
+
+      <ion-item color="{{lecturesColor}}" menuClose="" on-click="goToLectures()" id="menu-list-item3">
         <ion-icon name="book" item-left></ion-icon>
-        Lectures
+        <ion-label>Lectures</ion-label>
       </ion-item>
-      <ion-item color="none" menuClose="" on-click="goToEvents()" id="menu-list-item10">
+
+      <ion-item  menuClose="" color="{{eventsColor}}" on-click="goToEvents()" id="menu-list-item10">
         <ion-icon name="people" item-left></ion-icon>
-        Events
+        <ion-label>Events</ion-label>
       </ion-item>
-      <ion-item color="none" menuClose="" on-click="goToNotifications()" id="menu-list-item11">
+
+      <ion-item color="{{notificationsColor}}" menuClose="" on-click="goToNotifications()" id="menu-list-item11">
         <ion-icon name="notifications" item-left></ion-icon>
-        Notifications
+        <ion-label>Notifications</ion-label>
       </ion-item>
-      <ion-item color="none" menuClose="" on-click="goToSettings()" id="menu-list-item12">
-        <ion-icon name="settings" item-left></ion-icon>
-        Settings
+
+      <ion-item color="{{aboutHelpColor}}" menuClose="" on-click="goToAboutHelp()" id="menu-list-item12">
+        <ion-icon name="help" item-left></ion-icon>
+        <ion-label>About/Help</ion-label>
       </ion-item>
+
+      <ion-item color="{{settingsColor}}" menuClose="" on-click="goToSettings()" id="menu-list-item13">
+        <ion-icon name="settings" item-left ></ion-icon>
+        <ion-label>Settings</ion-label>
+      </ion-item>
+
     </ion-list>
+
   </ion-content>
 </ion-menu>
 

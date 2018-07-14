@@ -1,0 +1,75 @@
+<!--
+  Generated template for the UpdateSingleTaskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      View Single Task
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="eye"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text" name="name" [(ngModel)]="model.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Deadline</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY - HH:mm" name="deadline" min="2017" [(ngModel)]="model.deadline"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Scope</ion-label>
+      <ion-select [(ngModel)]="model.scope">
+        <ion-option *ngFor="let scope of scopes" value="{{scope.value}}">{{scope.text}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Status</ion-label>
+      <ion-select name="status" [(ngModel)]="model.status">
+        <ion-option *ngFor="let status of statuses" value="{{ status.value }}">{{ status.text}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Priority</ion-label>
+      <ion-select name="priority" [(ngModel)]="model.priority">
+        <ion-option *ngFor="let p of priorites" value="{{p}}">{{p}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Requiredness</ion-label>
+      <ion-select name="requiredness" [(ngModel)]="model.requiredness">
+        <ion-option *ngFor="let r of requirednessArray" value="{{r}}">{{r}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked="">Description</ion-label>
+      <ion-textarea [(ngModel)]="model.description"rows="5"></ion-textarea>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="updateTask()">Update</button>
+
+</ion-content>

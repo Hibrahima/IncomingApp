@@ -30,7 +30,8 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Deadline : {{model.deadline}}</ion-label>
+      <ion-label stacked>Deadline</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY - HH:mm" name="deadline" min="2017" disabled="" [(ngModel)]="model.deadline"></ion-datetime>
     </ion-item>
 
     <ion-item>
@@ -42,15 +43,15 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Status: {{model.status}}</ion-label>
+      <ion-label stacked>Status: {{status}}</ion-label>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Requiredness {{model.requiredness}}</ion-label>
+      <ion-label stacked>Requiredness: {{model.requiredness}}</ion-label>
     </ion-item>
 
-    <h3> Description </h3>
-    <ion-textarea [(ngModel)]="model.description" text-wrap rows="5"></ion-textarea>
+    <h5> Description </h5>
+    <ion-textarea [(ngModel)]="model.description" text-wrap rows="5" disabled=""></ion-textarea>
 
 
 

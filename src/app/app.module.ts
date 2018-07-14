@@ -8,15 +8,16 @@ import { LecturesPage } from '../pages/lectures/lectures';
 import { EventsPage } from '../pages/events/events';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { SettingsPage } from '../pages/settings/settings';
-
-
+import {AboutHelpPage} from "../pages/about-help/about-help";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-//Database layer
 import { SQLite } from '@ionic-native/sqlite'
 import { DatabaseProvider } from '../providers/database/database';
 import { TasksService } from '../providers/tasks-service/tasks-service';
+import { SettingsProvider } from '../providers/settings-service/settings';
+import {LocalNotifications} from "@ionic-native/local-notifications";
+
+
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TasksService } from '../providers/tasks-service/tasks-service';
     LecturesPage,
     EventsPage,
     NotificationsPage,
+    AboutHelpPage,
     SettingsPage
   ],
   imports: [
@@ -40,6 +42,7 @@ import { TasksService } from '../providers/tasks-service/tasks-service';
     LecturesPage,
     EventsPage,
     NotificationsPage,
+    AboutHelpPage,
     SettingsPage
   ],
   providers: [
@@ -48,7 +51,9 @@ import { TasksService } from '../providers/tasks-service/tasks-service';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
       SQLite,
     DatabaseProvider,
-    TasksService
+      LocalNotifications,
+    TasksService,
+    SettingsProvider
   ]
 })
 export class AppModule {}

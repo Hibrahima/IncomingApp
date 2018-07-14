@@ -23,6 +23,15 @@
 
 <ion-content padding>
 
+    <ion-refresher (ionRefresh)="PullToRefresh($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                pullingText="Pull to refresh"
+                refreshingSpinner="circles"
+                refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher>
+
   <ion-list text-wrap>
     <ion-item *ngIf="allTasks.length == 0">
       Empty
@@ -30,10 +39,8 @@
 
     <ion-item-sliding *ngFor="let task of allTasks">
         <ion-item>
-          <ion-label>{{ task.name }}</ion-label>
+          <ion-label color="{{task.labelColor}}">{{ task.name }}</ion-label>
           <ion-checkbox (ionChange)="updateTaskStatus(task)" [checked]="task.status"></ion-checkbox>
-          <h2>Deadline: {{ task.deadline }}</h2>
-          <h2>Priority: {{ task.priority }}</h2>
         </ion-item>
 
       <ion-item-options side="right">
@@ -45,6 +52,11 @@
         <button ion-button color="danger" (click)="deleteTask(task)">
           <ion-icon name="trash"></ion-icon>
           Delete
+        </button>
+
+        <button ion-button (click)="updateTask(task)">
+          <ion-icon name="sync"></ion-icon>
+           Update
         </button>
       </ion-item-options>
 

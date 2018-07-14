@@ -573,7 +573,7 @@
         throw newSQLError('Database location or iosDatabaseLocation setting is now mandatory in openDatabase call.');
       }
       if (!!openargs.location && !!openargs.iosDatabaseLocation) {
-        throw newSQLError('AMBIGUOUS: both location and iosDatabaseLocation settings are present in openDatabase call. Please use either setting, not both.');
+        throw newSQLError('AMBIGUOUS: both location and iosDatabaseLocation settings-service are present in openDatabase call. Please use either setting, not both.');
       }
       dblocation = !!openargs.location && openargs.location === 'default' ? iosLocationMap['default'] : !!openargs.iosDatabaseLocation ? iosLocationMap[openargs.iosDatabaseLocation] : dblocations[openargs.location];
       if (!dblocation) {
@@ -618,7 +618,7 @@
         throw newSQLError('Database location or iosDatabaseLocation setting is now mandatory in deleteDatabase call.');
       }
       if (!!first.location && !!first.iosDatabaseLocation) {
-        throw newSQLError('AMBIGUOUS: both location and iosDatabaseLocation settings are present in deleteDatabase call. Please use either setting value, not both.');
+        throw newSQLError('AMBIGUOUS: both location and iosDatabaseLocation settings-service are present in deleteDatabase call. Please use either setting value, not both.');
       }
       dblocation = !!first.location && first.location === 'default' ? iosLocationMap['default'] : !!first.iosDatabaseLocation ? iosLocationMap[first.iosDatabaseLocation] : dblocations[first.location];
       if (!dblocation) {

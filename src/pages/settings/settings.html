@@ -13,4 +13,27 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page6"></ion-content>
+
+<ion-content padding id="page6">
+
+  <ion-list text-wrap="">
+    <ion-item>
+      <ion-label>Enable notifications</ion-label>
+      <ion-toggle [(ngModel)]="isNotificationEnabled" (ionChange)="updateNotificationStatus()"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Enable alert noifications</ion-label>
+      <ion-toggle [(ngModel)]="isAlertNotificationEnabled" (ionChange)="updateAlertNotificationStatus()"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>How many days prior to task deadline?</ion-label>
+      <ion-select [(ngModel)]="numberOfDaysBeforeDeadline" (ionChange)="updateNumberOfDaysBeforeDeadline()">
+        <ion-option *ngFor="let d of days" value="{{d.value}}">{{d.text}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

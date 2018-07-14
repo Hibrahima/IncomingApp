@@ -8,7 +8,7 @@ var isWP8 = /IEMobile/.test(navigator.userAgent); // Matches WP(7/8/8.1)
 var isWindows = /Windows /.test(navigator.userAgent); // Windows (8.1)
 var isAndroid = !isWindows && /Android/.test(navigator.userAgent);
 
-// The following openDatabase settings are used for Plugin-implementation-2
+// The following openDatabase settings-service are used for Plugin-implementation-2
 // on Android:
 // - androidDatabaseImplementation: 2
 // - androidLockWorkaround: 1

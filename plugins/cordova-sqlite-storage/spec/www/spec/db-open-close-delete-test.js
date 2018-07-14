@@ -613,7 +613,7 @@ var mytests = function() {
           }
         }, MYTIMEOUT);
 
-        it(suiteName + 'open with both location & iosDatabaseLocation settings (REJECTED with exception)', function(done) {
+        it(suiteName + 'open with both location & iosDatabaseLocation settings-service (REJECTED with exception)', function(done) {
           try {
             window.sqlitePlugin.openDatabase({
               name: 'open-with-both-location-and-iosDatabaseLocation.db',
@@ -964,7 +964,7 @@ var mytests = function() {
           }
         }, MYTIMEOUT);
 
-        it(suiteName + 'sqlitePlugin.deleteDatabase with both location & iosDatabaseLocation settings (REJECTED with exception)', function(done) {
+        it(suiteName + 'sqlitePlugin.deleteDatabase with both location & iosDatabaseLocation settings-service (REJECTED with exception)', function(done) {
           try {
             window.sqlitePlugin.deleteDatabase({ name: 'my.db', location: 'default', iosDatabaseLocation: 2 }, function() {
               // NOT EXPECTED:

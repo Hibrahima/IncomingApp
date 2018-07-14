@@ -13,41 +13,31 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding id="page5">
-  <div id="notifications-container2">
-    <ion-list id="notifications-list14">
-      <ion-item color="none" id="notifications-list-item14">
-        <ion-icon name="warning" item-left></ion-icon>
-        Task title / Task deadline - Hey, deadline is close
+
+  <ion-list text-wrap="">
+
+    <ion-item *ngIf="allNotificationTasks.length == 0">
+      Empty
+    </ion-item>
+
+    <ion-item-sliding *ngFor="let task of allNotificationTasks">
+      <ion-item>
+        <ion-icon name="{{task.iconName}}" color="{{task.iconColor}}" item-left></ion-icon>
+        <ion-label color="{{task.labelColor}}">{{task.name}} - {{task.formattedDeadline}}</ion-label>
       </ion-item>
-    </ion-list>
-    <button id="notifications-button5" ion-button color="positive" block icon-left>
-      <ion-icon name="arrow-dropright"></ion-icon>
-      Go to task
-    </button>
-  </div>
-  <div id="notifications-container7">
-    <ion-list id="notifications-list17">
-      <ion-item color="none" id="notifications-list-item16">
-        <ion-icon name="checkmark" item-left></ion-icon>
-        Task title / Task deadline - Job done
-      </ion-item>
-    </ion-list>
-    <button id="notifications-button7" ion-button color="positive" block icon-left>
-      <ion-icon name="arrow-dropright"></ion-icon>
-      Go to task
-    </button>
-  </div>
-  <div id="notifications-container4">
-    <ion-list id="notifications-list16">
-      <ion-item color="none" id="notifications-list-item15">
-        <ion-icon name="ionic" item-left></ion-icon>
-        Task title / Task deadline - Still awaiting
-      </ion-item>
-    </ion-list>
-    <button id="notifications-button4" ion-button color="positive" block icon-left>
-      <ion-icon name="arrow-dropright"></ion-icon>
-      Go to task
-    </button>
-  </div>
+
+
+      <ion-item-options side="right">
+        <button ion-button (click)="showTask(task.id)">
+          <ion-icon name="eye"></ion-icon>
+          View
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+  </ion-list>
+
 </ion-content>
