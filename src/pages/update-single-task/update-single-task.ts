@@ -84,7 +84,7 @@ export class UpdateSingleTaskPage {
                     text: "Update",
                     handler: () => {
                         this.taskService.updateTask(this.model);
-                        this.presentBasicAlert("Task status updated", "The status of the task has been updated.");
+                        this.presentBasicAlert("Task updated", "The task information has been successfully updated.");
                         this.navCtrl.pop();
                     }
                 }

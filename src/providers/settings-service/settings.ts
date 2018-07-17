@@ -13,18 +13,18 @@ export class SettingsProvider {
 
   public  addPredefinedSettings(){
     let s1 = {
-      option_name: "is_notification_enabled",
-      option_value: 0
+      option_name: "is_notification_enabled", // can be toggled on (then option_value => 1) in the view
+      option_value: 0 // 0 = not enabled
     };
 
     let s2 = {
-          option_name: "is_alert_notification_enabled",
-          option_value: 0
+          option_name: "is_alert_notification_enabled", // can be toggled on (then option_value => 1) in the view
+          option_value: 0 // 0 = not enabled
     };
 
     let s3 = {
-          option_name: "number_days_before_deadline",
-          option_value: 0
+          option_name: "number_days_before_deadline", // user can select the number of days from a list
+          option_value: 0 // by default 0 day
     };
 
     this.addSetting(s1); this.addSetting(s2); this.addSetting(s3);

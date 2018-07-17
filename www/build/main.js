@@ -832,15 +832,15 @@ var SettingsProvider = /** @class */ (function () {
     SettingsProvider.prototype.addPredefinedSettings = function () {
         var s1 = {
             option_name: "is_notification_enabled",
-            option_value: 0
+            option_value: 0 // 0 = not enabled
         };
         var s2 = {
             option_name: "is_alert_notification_enabled",
-            option_value: 0
+            option_value: 0 // 0 = not enabled
         };
         var s3 = {
             option_name: "number_days_before_deadline",
-            option_value: 0
+            option_value: 0 // by default 0 day
         };
         this.addSetting(s1);
         this.addSetting(s2);
