@@ -14,12 +14,12 @@ export class SettingsProvider {
   public  addPredefinedSettings(){
     let s1 = {
       option_name: "is_notification_enabled", // can be toggled on (then option_value => 1) in the view
-      option_value: 1 // 0 = not enabled
+      option_value: 1 // 0 = not enabled, 1 = enabled
     };
 
     let s2 = {
           option_name: "is_alert_notification_enabled", // can be toggled on (then option_value => 1) in the view
-          option_value: 0 // 0 = not enabled
+          option_value: 0 // 0 = not enabled, 1 = enabled
     };
 
     let s3 = {
