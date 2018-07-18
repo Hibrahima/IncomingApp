@@ -14,7 +14,7 @@ export class SettingsProvider {
   public  addPredefinedSettings(){
     let s1 = {
       option_name: "is_notification_enabled", // can be toggled on (then option_value => 1) in the view
-      option_value: 0 // 0 = not enabled
+      option_value: 1 // 0 = not enabled
     };
 
     let s2 = {

@@ -832,7 +832,7 @@ var SettingsProvider = /** @class */ (function () {
     SettingsProvider.prototype.addPredefinedSettings = function () {
         var s1 = {
             option_name: "is_notification_enabled",
-            option_value: 0 // 0 = not enabled
+            option_value: 1 // 0 = not enabled
         };
         var s2 = {
             option_name: "is_alert_notification_enabled",
