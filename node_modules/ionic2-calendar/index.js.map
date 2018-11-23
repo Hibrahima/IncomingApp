@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,gBAAgB,EAAC,MAAM,mBAAmB,CAAC","sourcesContent":["export {NgCalendarModule} from './calendar.module';\n"]}

@@ -14,18 +14,38 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page3">
-  <form id="lectures-form2">
-    <ion-item id="lectures-radio1">
-      <ion-label>
-        Weekly View
-      </ion-label>
-      <ion-radio></ion-radio>
-    </ion-item>
-    <ion-item id="lectures-radio2">
-      <ion-label>
-        Montly View
-      </ion-label>
-      <ion-radio></ion-radio>
-    </ion-item>
-  </form>
+  <!--<form id="lectures-form2"> -->
+
+    <ion-list radio-group>
+      <ion-item id="lectures-radio1">
+        <ion-label>
+          Monthly View
+        </ion-label>
+        <ion-radio [checked]="true" (ionSelect)="radioChecked(1)"></ion-radio>
+      </ion-item>
+      <ion-item id="lectures-radio2">
+        <ion-label>
+          Weekly View
+        </ion-label>
+        <ion-radio (ionSelect)="radioChecked(2)"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-label>
+      {{ monthTitle }}
+    </ion-label>
+    <button ion-button icon-only (click)="addEvent()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <calendar [eventSource]="eventSource"
+              [calendarMode]="calendar.mode"
+              [currentDate]="calendar.currentDate"
+              (onEventSelected)="onEventSelected($event)"
+              (onTitleChanged)="onViewTitleChanged($event)"
+              (onTimeSelected)="onTimeSelected($event)"
+              step="30"
+              class="calendar">
+    </calendar>
+
+  <!-- </form> -->
 </ion-content>
